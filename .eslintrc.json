@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended"
+    ],
+
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "plugins": [
+    "react",
+    "eslint-plugin-import-helpers",
+    "react-hooks",
+    "prettier"
+    ],
+
+    "rules": {
+      "prettier/prettier":["error",
+      {
+        "endOfLine": "auto"
+        }
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "no-unused-vars": "warn",
+      "import-helpers/order-imports": [
+        "warn",
+        {
+          "newlinesBetween": "always",
+          "groups": [
+            "/^react/",
+            "module",
+            "/^@shared/",
+            ["parent", 
+              "sibling", 
+              "index"]
+          ],
+          "alphabetize": {
+            "order": "asc",
+            "ignoreCase": true
+          }
+        }
+      ]
+    }
+  }
+  
+
+
+
