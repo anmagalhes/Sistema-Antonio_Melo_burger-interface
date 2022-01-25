@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import Login from "./Containers/login"
+import Login from "./Containers/login/index"
 import GlobalStyle from "./styles/GlobalStyles"
 
 ReactDOM.render(
