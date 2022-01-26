@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 
 import LoginImg from "../../assets/Login_imagem.svg"
 import Logo from "../../assets/logo.svg"
 import {
   Contanier,
-  LoginImagem,
+  LoginImage,
+  Logo2,
   ContanierItens,
   Label,
   Input,
@@ -15,15 +17,16 @@ import {
 function login() {
   return (
     <Contanier>
-      <LoginImagem src={LoginImg} all="login-imagem" />,
+      <LoginImage src={LoginImg} all="login-imagem" />,
       <ContanierItens>
-        <img src = {Logo} all="logo-imagem"/>
+        <Logo2 src={Logo} all="logo" />
+
         <h1>Login</h1>
         <Label>Email</Label>
         <Input />
         <Label>Senha</Label>
         <Input />
-        <Button>SignIn</Button>
+        <Button>Sign In</Button>
         <SignInLink>
           Não possui conta ? <a>SignUp</a>
         </SignInLink>
@@ -31,4 +34,5 @@ function login() {
     </Contanier>
   )
 }
+
 export default login
