@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 import Backgroud from "../../assets/Backgroud.svg"
 
+export const Logo2 = styled.img``
+
 export const Contanier = styled.div`
   height: 100vh;
   width: 100vw;
@@ -11,19 +13,21 @@ export const Contanier = styled.div`
   align-items: center;
 `
 export const LoginImage = styled.img`
-  height: 80%;
+  height: 86%;
 `
-
-export const Logo2 = styled.img``
-
 export const ContanierItens = styled.div`
   background: #373737;
   border-radius: 0 10px 10px 0;
-  height: 80%;
+  height: 86%;
+  padding: 25px 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
+  form {
+    display: flex;
+    flex-direction: column;
+  }
   h1 {
     font-style: normal;
     font-weight: 500;
