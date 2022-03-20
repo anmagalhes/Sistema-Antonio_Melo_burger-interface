@@ -26,14 +26,32 @@
     ],
 
     "rules": {
+
       "prettier/prettier":["error",
       {
         "endOfLine": "auto"
         }
       ],
+      
+      "no-unused-vars": ["error", 
+
+        { "vars": "all", 
+          "args": "after-used", 
+          "ignoreRestSiblings": false
+          }],
+
+      //"import/prefer-default-export": 0,
+
+      
+      "react/jsx-filename-extension": [
+        "error",
+        {
+          "extensions": [".js", ".jsx", ".tsx", ".ts"]
+        }
+      ],
+      
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
-      "no-unused-vars": "warn",
       "import-helpers/order-imports": [
         "warn",
         {

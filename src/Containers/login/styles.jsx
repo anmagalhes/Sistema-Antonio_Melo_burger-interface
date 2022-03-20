@@ -6,6 +6,7 @@ export const Logo2 = styled.img``
 
 export const Contanier = styled.div`
   height: 100vh;
+  max-height: 100vh;
   width: 100vw;
   background: url("${Backgroud}");
   display: flex;
@@ -53,35 +54,9 @@ export const Input = styled.input`
   background: #ffffff;
   box-shadow: 3px 3px 10px rgba(74, 144, 226, 0, 19);
   border-radius: 5px;
-  border: none;
+  border: ${props => (props.error ? "2px solid #cc1717" : "none")};
   padding-left: 10px;
 `
-
-export const Button = styled.button`
-  width: 182.81px;
-  height: 36.13px;
-  background: #9758a6;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #eeeeee;
-  margin-top: 40px;
-  margin-bottom: 25px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-`
-
 export const SignInLink = styled.p`
   font-style: normal;
   font-weight: 300px;
@@ -94,4 +69,13 @@ export const SignInLink = styled.p`
     cursor: pointer;
     text-decoration: underline;
   }
+`
+
+export const Erromessage = styled.p`
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #cc1717;
+  margin-top: 2px;
 `
